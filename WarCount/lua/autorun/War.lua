@@ -67,7 +67,7 @@ if CLIENT then
         surface.SetTextPos(ScrW()-ScrW()*0.125,ScrH()*0.12)
         surface.DrawText("WAR HAS BEGUN!")
         surface.SetTextPos(ScrW()-ScrW()*0.125,ScrH()*0.07)
-        surface.DrawText("Time Left: " .. War.Time .. "s")
+        surface.DrawText("Time Left: " .. War.Time .. "s") -- Change it with draw.SimpleText and Center it ONG
         
 
         net.Receive("War_End", function()
